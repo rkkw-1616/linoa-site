@@ -79,9 +79,9 @@
   height: 10px;
   border-bottom: 2px solid #333;
   border-right: 2px solid #333;
-  transform: rotate(45deg); /* 斜めに傾けて「∨」にする */
-  transition: transform 0.3s ease; /* なめらかに動かす */
-  margin-bottom: 4px; /* 位置の微調整 */
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+  margin-bottom: 4px;
 }
 
 .p-navList__item.active .c-navArrow {
@@ -91,12 +91,11 @@
 }
 
 .p-dropdownList {
-  /* 初期状態は高さを0にして非表示 */
   height: 0;
   overflow: hidden;
   opacity: 0;
   transition: all 0.3s ease;
-  padding-left: 15px; /* 子メニューとわかるように少し下げる */
+  padding-left: 15px;
 }
 
 .p-navList__item.active .p-dropdownList {
