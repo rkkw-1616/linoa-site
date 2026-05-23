@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 .l-header {
-  border-top: 6px solid #1d3865;
+  border-top: 6px solid #FFCCCC;
   padding: 0 50px;
 }
 
@@ -21,31 +21,28 @@
 }
 
 .c-navLogo {
-  width: 220px;
-  height: 85px;
-  object-fit: cover;
-  padding-top: 20px;
+  width: 120px;
+  object-fit: contain;
 }
 
 .p-topContents__inner {
-  width: 210px;
-  height: 45px;
+  width: 260px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #1d3865;
+  background-color: #FFCCCC;
   border-radius: 0 0 12px 12px;
   padding: 13px;
 }
 
 .c-navIcon {
   width: 20px;
+  height: 20px;
 }
 
 .c-innerText {
-  color: #fff;
   font-size: 14px;
-  font-weight: bold;
   padding-left: 10px;
 }
 
@@ -74,20 +71,21 @@
 }
 
 .c-navArrow {
-  display: block;
-  width: 10px;
-  height: 10px;
-  border-bottom: 2px solid #333;
-  border-right: 2px solid #333;
-  transform: rotate(45deg);
-  transition: transform 0.3s ease;
-  margin-bottom: 4px;
+  position: relative;
+  display: inline-block;
+  padding-right: 24px;
 }
 
-.p-navList__item.active .c-navArrow {
-  transform: rotate(-135deg);
-  margin-top: 4px;
-  margin-bottom:0;
+.c-navArrow::after {
+  content: "";
+  position: absolute;
+  top: 30%;
+  right: 7%;
+  width: 8px;
+  height: 8px;
+  border-right: 1px solid #990000;
+  border-bottom: 1px solid #990000;
+  transform: translateY(-50%) rotate(45deg);
 }
 
 .p-dropdownList {
@@ -104,8 +102,33 @@
   margin-top: 10px;
 }
 
+.c-mainTitle {
+  position: relative;
+  display: inline-block;
+  font-size: 56px;
+  font-weight: normal;
+  color: #990000;
+  padding-left: 40px;
+  font-family: serif;
+}
+
+.c-mainTitle::before {
+  content: "・";
+  position: absolute;
+  top: 0;
+  left: -4%;
+  color: #990000;
+  text-shadow: 0 0 6px #990000, 0 0 12px #990000;
+}
+
+.c-mainHeading {
+  font-size: 18px;
+  font-weight: normal;
+  color: #990000;
+}
+
 .l-footer {
-  background-color: #1D3865;
+  background-color: #FFCCCC;
 }
 
 .p-bottomContents {
@@ -113,7 +136,6 @@
 }
 
 .c-bottomHeading {
-  color: #fff;
   font-size: 118px;
   white-space: nowrap;
   opacity: 0.5;
@@ -131,16 +153,14 @@
   flex-wrap: wrap;
   gap: 20px 80px;
   padding-bottom: 50px;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid;
 }
 
 .p-bottomList__item {
-  color: #fff;
   font-size: 14px;
 }
 
 .c-copyright {
   padding-top: 50px;
-  color: #fff;
   font-size: 10px;
 }
