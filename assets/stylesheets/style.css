@@ -197,6 +197,7 @@
   width: 651px;
   height: 370px;
   object-fit: contain;
+  border-radius: 50px 0 0 50px;
 }
 
 .p-body {
@@ -207,6 +208,7 @@
   width: 651px;
   height: 370px;
   object-fit: contain;
+  border-radius: 50px 0 0 50px;
 }
 
 .p-price {
@@ -270,7 +272,21 @@
 }
 
 .p-columnList__item {
-  padding-right: 50px;
+  padding-right: 80px;
+}
+
+.c-columnImage {
+  width: 194px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.c-columnText {
+  width: 194px;
+  font-size: 14px;
+  padding-top: 10px;
+  text-align: center;
 }
 
 .p-newsList__item {
