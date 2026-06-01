@@ -161,6 +161,36 @@
   margin: 100px;
 }
 
+.c-mainButton {
+  text-align: justify;
+  position: relative;
+  padding-left: 25px;
+  background-color: #8B5E50;
+  width: 250px;
+  height: 45px;
+  border: none;
+  border-radius: 50px;
+  margin: 30px 415px;
+}
+
+.c-buttonText {
+  padding-left: 50px;
+}
+
+.c-buttonArrow {
+  content: "";
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 80px;
+  width: 13px;
+  height: 13px;
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+  transform: rotate(45deg);
+}
+
 .c-mainHeading {
   padding: 10px 0 0 40px;
 }
@@ -176,15 +206,6 @@
   color: #8B5E50;
 }
 
-.c-mainButton {
-  background-color: #8B5E50;
-  width: 250px;
-  height: 45px;
-  border: none;
-  border-radius: 50px;
-  margin: 30px 415px;
-}
-
 .c-buttonText {
   color: #fff;
 }
@@ -197,7 +218,15 @@
   width: 651px;
   height: 370px;
   object-fit: contain;
-  border-radius: 50px 0 0 50px;
+}
+
+.p-facialCircle {
+  width: 180px;
+  height: 180px;
+  border: 1px solid #8B5E50;
+  border-radius: 50%;
+  background-color: transparent;
+  box-shadow: 0 0 2px #8B5E50, 0 0 12px #8B5E50;
 }
 
 .p-body {
@@ -263,7 +292,14 @@
 }
 
 .p-column {
-  padding: 100px;
+  background-color: #8B5E50;
+}
+
+.p-columnContents {
+  width: 1090px;
+  height: 653px;
+  background-color: #fff;
+  padding: 100px 0 100px 250px;
 }
 
 .p-columnList {
