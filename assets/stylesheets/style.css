@@ -127,9 +127,13 @@
   opacity: 1;
   margin-top: 10px;
 }
+.l-main {
+  background-color: #8B5E50;
+}
 
 .p-campaign {
   padding: 100px;
+  background-color: #fff;
 }
 
 .c-mainTitle {
@@ -212,6 +216,7 @@
 
 .p-facial {
   padding: 100px;
+  background-color: #FAF0E6;
 }
 
 .c-facialImage {
@@ -231,6 +236,7 @@
 
 .p-body {
   padding: 100px;
+  background-color: #fff;
 }
 
 .c-bodyImage {
@@ -242,6 +248,7 @@
 
 .p-price {
   padding: 100px;
+  background-color: #FAF0E6;
 }
 
 .p-priceList {
@@ -255,10 +262,13 @@
 
 .p-news {
   padding: 100px;
+  background-color: #fff;
+  border-radius: 100px 0 0;
 }
 
 .p-flow {
   padding: 100px;
+  background-color: #FAF0E6;
 }
 
 .p-flowList {
@@ -291,6 +301,11 @@
   width: 251px;
 }
 
+.c-bigImage {
+  height: 600px;
+  object-fit: cover;
+}
+
 .p-column {
   background-color: #8B5E50;
 }
@@ -300,6 +315,7 @@
   height: 653px;
   background-color: #fff;
   padding: 100px 0 100px 250px;
+  border-radius: 0 100px 100px 0;
 }
 
 .p-columnList {
@@ -335,7 +351,7 @@
 }
 
 .l-footer {
-  margin-top: 50px;
+  padding-top: 50px;
   background-color: #8B5E50;
 }
 
