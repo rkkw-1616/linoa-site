@@ -159,10 +159,62 @@
   font-size: 18px;
   font-weight: normal;
   color: #8B5E50;
+  padding: 10px 0 0 40px;
+}
+
+.p-campaignContents__bottom {
+  padding-top: 45px;
+  display: flex;
+  justify-content: center;
+}
+
+.c-campaignImage {
+  width: 800px;
+  height: 340px;
 }
 
 .p-about {
   margin: 100px;
+}
+
+.c-aboutTitle {
+  position: relative;
+  display: inline-block;
+  font-size: 56px;
+  font-weight: normal;
+  color: #fff;
+  padding-left: 40px;
+  font-family: serif;
+}
+
+.c-aboutTitle::before {
+  content: "・";
+  position: absolute;
+  top: 0;
+  left: -4%;
+  color: #fff;
+  text-shadow: 0 0 6px #fff, 0 0 12px #fff;
+}
+
+.c-aboutHeading {
+  font-size: 18px;
+  font-weight: normal;
+  color: #fff;
+  padding: 10px 0 0 40px;
+}
+
+.c-whiteText {
+  display: contents;
+  color: #fff;
+}
+
+.p-aboutContents__bottom {
+  padding-top: 45px;
+}
+
+.c-aboutImage {
+  height: 500px;
+  object-fit: cover;
 }
 
 .c-mainButton {
@@ -193,10 +245,6 @@
   border-top: 3px solid #fff;
   border-right: 3px solid #fff;
   transform: rotate(45deg);
-}
-
-.c-mainHeading {
-  padding: 10px 0 0 40px;
 }
 
 .c-mainText {
@@ -242,8 +290,6 @@
 .c-bodyImage {
   width: 651px;
   height: 370px;
-  object-fit: contain;
-  border-radius: 50px 0 0 50px;
 }
 
 .p-price {
@@ -267,8 +313,18 @@
 }
 
 .p-flow {
-  padding: 100px;
   background-color: #FAF0E6;
+}
+
+.p-flowContents {
+  padding: 100px;
+}
+
+.c-middleImage {
+  width: 651px;
+  height: 370px;
+  object-fit: cover;
+  margin-left: 500px;
 }
 
 .p-flowList {
