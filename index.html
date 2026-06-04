@@ -30,22 +30,22 @@
             <li class="p-navList__item"><a href="#">料金</a></li>
             <li class="p-navList__item"><a href="#">よくある質問</a></li>
             <li class="p-navList__item">
-              <details class="p-dropdown">
-                <summary class="c-navText">会員様向けメニュー</summary>
+              <div class="p-dropdown">
+                <button type=button class="c-dropdownButton">会員様向けメニュー</button>
                   <ul class="p-dropdownList">
                     <li class="p-dropdownList__item"><a href="#">オンラインショップ</a></li>
                     <li class="p-dropdownList__item"><a href="#">ヘルプセンター</a></li>
                   </ul>
-              </details>
+              </div>
             </li>
             <li class="p-navList__item">
-              <details class="p-dropdown">
-                <summary class="c-navText">最新のお知らせ</summary>
+              <div class="p-dropdown">
+                <button type=button class="c-dropdownButton">最新のお知らせ</button>
                   <ul class="p-dropdownList">
                     <li class="p-dropdownList__item"><a href="#">NEWS</a></li>
                     <li class="p-dropdownList__item"><a href="#">COLUMN</a></li>
                   </ul>
-              </details>
+                </div>
             </li>
           </ul>
         </div>
@@ -78,10 +78,12 @@
         </div>
         <div class="p-aboutContents__bottom">
           <img class="c-aboutImage" src="./assets/images/about.jpeg" alt="フェイシャル">
-          <button class="c-mainButton">
-            <span class="c-buttonText">詳しく見る</span>
-            <div class="c-buttonArrow"></div>
-          </button>
+          <a href="#">
+            <button class="c-aboutButton">
+              <span class="c-buttonText u-brownText">詳しく見る</span>
+              <div class="c-aboutArrow"></div>
+            </button>
+          </a>
         </div>
       </div>
     </section>
