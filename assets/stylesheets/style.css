@@ -270,8 +270,9 @@
   margin: 30px 415px;
 }
 
-.u-brownText {
+.c-aboutText {
   color: #8B5E50;
+  padding-left: 50px;
 }
 
 .c-aboutArrow {
@@ -302,6 +303,7 @@
 
 .c-buttonText {
   padding-left: 50px;
+  color: #fff;
 }
 
 .c-buttonArrow {
@@ -349,6 +351,36 @@
   box-shadow: 0 0 2px #8B5E50, 0 0 12px #8B5E50;
 }
 
+.c-facialButton {
+  text-align: justify;
+  position: relative;
+  background-color: #8B5E50;
+  width: 250px;
+  height: 45px;
+  border: none;
+  border-radius: 50px;
+  margin: 30px 415px;
+}
+
+.c-facialText {
+  padding-left: 30px;
+  color: #fff;
+}
+
+.c-facialArrow {
+  content: "";
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 30px;
+  width: 13px;
+  height: 13px;
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+  transform: rotate(45deg);
+}
+
 .p-body {
   padding: 100px;
   background-color: #fff;
@@ -371,6 +403,56 @@
 
 .p-question {
   padding: 100px;
+}
+
+.c-questionTitle {
+  position: relative;
+  display: inline-block;
+  font-size: 56px;
+  font-weight: normal;
+  color: #fff;
+  padding-left: 40px;
+  font-family: serif;
+}
+
+.c-questionTitle::before {
+  content: "・";
+  position: absolute;
+  top: 0;
+  left: -4%;
+  color: #fff;
+  text-shadow: 0 0 6px #fff, 0 0 12px #fff;
+}
+
+.c-questionButton {
+  text-align: justify;
+  position: relative;
+  padding-left: 25px;
+  background-color: #fff;
+  width: 250px;
+  height: 45px;
+  border: none;
+  border-radius: 50px;
+  margin: 30px 415px;
+}
+
+.c-questionText {
+  color: #8B5E50;
+  padding-left: 50px;
+}
+
+.c-questionArrow {
+  content: "";
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 80px;
+  width: 13px;
+  height: 13px;
+  border-top: 3px solid #8B5E50;
+  border-right: 3px solid #8B5E50;
+  transform: rotate(45deg);
 }
 
 .p-news {
