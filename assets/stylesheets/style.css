@@ -289,37 +289,6 @@
   transform: rotate(45deg);
 }
 
-.c-mainButton {
-  text-align: justify;
-  position: relative;
-  padding-left: 25px;
-  background-color: #8B5E50;
-  width: 250px;
-  height: 45px;
-  border: none;
-  border-radius: 50px;
-  margin: 30px 415px;
-}
-
-.c-buttonText {
-  padding-left: 50px;
-  color: #fff;
-}
-
-.c-buttonArrow {
-  content: "";
-  margin: auto;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 80px;
-  width: 13px;
-  height: 13px;
-  border-top: 3px solid #fff;
-  border-right: 3px solid #fff;
-  transform: rotate(45deg);
-}
-
 .c-mainText {
   display: flex;
   padding: 20px 0 0 25px;
@@ -391,6 +360,37 @@
   height: 370px;
 }
 
+.c-mainButton {
+  text-align: justify;
+  position: relative;
+  padding-left: 25px;
+  background-color: #8B5E50;
+  width: 250px;
+  height: 45px;
+  border: none;
+  border-radius: 50px;
+  margin: 30px 415px;
+}
+
+.c-buttonText {
+  padding-left: 50px;
+  color: #fff;
+}
+
+.c-buttonArrow {
+  content: "";
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 80px;
+  width: 13px;
+  height: 13px;
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+  transform: rotate(45deg);
+}
+
 .p-price {
   padding: 100px;
   background-color: #FAF0E6;
@@ -399,6 +399,36 @@
 .p-priceList {
   display: flex;
   flex-wrap: wrap;
+}
+
+.c-priceButton {
+  text-align: justify;
+  position: relative;
+  background-color: #8B5E50;
+  width: 250px;
+  height: 45px;
+  border: none;
+  border-radius: 50px;
+  margin: 30px 415px;
+}
+
+.c-priceText {
+  padding-left: 40px;
+  color: #fff;
+}
+
+.c-priceArrow {
+  content: "";
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 35px;
+  width: 13px;
+  height: 13px;
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+  transform: rotate(45deg);
 }
 
 .p-question {
@@ -461,6 +491,15 @@
   border-radius: 100px 0 0;
 }
 
+.p-newsList__item {
+  border-bottom: 1px solid #8B5E50;
+  padding: 25px;
+}
+
+.c-newsText {
+  padding-top: 10px;
+}
+
 .p-flow {
   background-color: #FAF0E6;
 }
@@ -506,6 +545,36 @@
   width: 251px;
 }
 
+.c-flowButton {
+  text-align: justify;
+  position: relative;
+  background-color: #8B5E50;
+  width: 250px;
+  height: 45px;
+  border: none;
+  border-radius: 50px;
+  margin: 30px 415px;
+}
+
+.c-flowLabel {
+  padding-left: 25px;
+  color: #fff;
+}
+
+.c-flowArrow {
+  content: "";
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 25px;
+  width: 13px;
+  height: 13px;
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+  transform: rotate(45deg);
+}
+
 .c-bigImage {
   height: 600px;
   object-fit: cover;
@@ -546,13 +615,29 @@
   text-align: center;
 }
 
-.p-newsList__item {
-  border-bottom: 1px solid #8B5E50;
-  padding: 25px;
+.c-columnButton {
+  text-align: justify;
+  position: relative;
+  background-color: #8B5E50;
+  width: 240px;
+  height: 45px;
+  border: none;
+  border-radius: 50px;
+  margin: 50px 240px;
 }
 
-.c-newsText {
-  padding-top: 10px;
+.c-columnArrow {
+  content: "";
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 50px;
+  width: 13px;
+  height: 13px;
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+  transform: rotate(45deg);
 }
 
 .l-footer {
