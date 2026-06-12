@@ -244,11 +244,13 @@
 }
 
 .c-whiteText {
-  display: contents;
+  font-size: 18px;
   color: #fff;
+  padding: 30px 0 0 20px;
 }
 
 .p-aboutContents__bottom {
+  position: relative;
   padding-top: 45px;
 }
 
@@ -257,21 +259,41 @@
   object-fit: cover;
 }
 
-.c-aboutButton {
-  text-align: justify;
-  position: relative;
-  padding-left: 25px;
+.p-aboutList {
+  position: absolute;
+  top: 25%;
+  left: 8%;
+}
+
+.p-aboutList__item {
+  border: 1px solid #8B5E50;
   background-color: #fff;
-  width: 250px;
   height: 45px;
-  border: none;
-  border-radius: 50px;
-  margin: 30px 415px;
+  width: 350px;
+  border-radius: 20px;
+  margin-bottom: 20px;
 }
 
 .c-aboutText {
   color: #8B5E50;
-  padding-left: 50px;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 6px;
+}
+
+.c-aboutButton {
+  display: flex;
+  position: relative;
+  background-color: #fff;
+  border: none;
+  border-radius: 50px;
+  margin: 50px 415px;
+  padding: 15px 50px;
+}
+
+.c-aboutLabel {
+  color: #8B5E50;
+  padding-left: 20px;
 }
 
 .c-aboutArrow {
@@ -288,50 +310,66 @@
   transform: rotate(45deg);
 }
 
+.p-facial {
+  padding: 100px 200px;
+  background-color: #FAF0E6;
+}
+
 .c-mainText {
   display: flex;
   padding: 20px 0 0 25px;
   font-size: 18px;
-}
-
-.c-brownText {
-  display: contents;
   color: #8B5E50;
 }
 
-.p-facial {
-  padding: 100px;
-  background-color: #FAF0E6;
+.p-facialContents__bottom {
+  padding-top: 50px;
 }
 
 .c-facialImage {
-  width: 651px;
-  height: 370px;
-  object-fit: contain;
+  height: 500px;
+  object-fit: cover;
 }
 
-.p-facialCircle {
-  width: 180px;
-  height: 180px;
-  border: 1px solid #8B5E50;
-  border-radius: 50%;
-  background-color: transparent;
-  box-shadow: 0 0 2px #8B5E50, 0 0 12px #8B5E50;
+.p-facialList {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
 }
 
-.c-facialButton {
-  text-align: justify;
-  position: relative;
-  background-color: #8B5E50;
+.p-facialList__item {
+  height: 100px;
   width: 250px;
-  height: 45px;
-  border: none;
-  border-radius: 50px;
-  margin: 30px 415px;
+  background-color: #fff;
+  margin-right: 20px;
+  border-radius: 25px;
+}
+
+.c-facialHeading {
+  text-align: center;
+  font-size: 18px;
+  padding-top: 20px;
+  color: #8B5E50;
 }
 
 .c-facialText {
-  padding-left: 30px;
+  text-align: center;
+  font-size: 15px;
+  padding-top: 10px;
+}
+
+.c-facialButton {
+  display: flex;
+  position: relative;
+  background-color: #8B5E50;
+  border: none;
+  border-radius: 50px;
+  margin: 0 290px;
+  padding: 20px;
+}
+
+.c-facialLabel {
+  padding-left: 20px;
   color: #fff;
 }
 
@@ -350,13 +388,16 @@
 }
 
 .p-body {
-  padding: 100px;
+  padding: 100px 200px;
   background-color: #fff;
 }
 
 .c-bodyImage {
-  width: 651px;
-  height: 370px;
+  height: 500px;
+}
+
+.p-bodyContents__bottom {
+  padding-top: 50px;
 }
 
 .c-mainButton {
@@ -409,21 +450,22 @@
   height: 200px;
   margin-right: 10px;
   background-color: #fff;
+  padding: 25px;
 }
 
 .c-priceTitle {
-  height: 100px;
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid;
+  border-bottom: 1px dotted;
   font-size: 18px;
   color: #8B5E50;
   font-weight: bold;
 }
 
 .c-priceHeading {
-  height: 100px;
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -547,7 +589,7 @@
   background-color: #fff;
 }
 
-.c-questionText {
+.c-accordionText {
   padding: 20px;
   margin: 0;
   line-height: 1.8;
@@ -744,6 +786,7 @@
   border-radius: 50px;
   margin: 50px 280px;
   padding: 15px 45px;
+  right: 5%;
 }
 
 .c-columnLabel {

@@ -82,17 +82,30 @@
         <div class="p-aboutContents__top">
           <h1 class="c-aboutTitle">ABOUT</h1>
           <h2 class="c-aboutHeading">LINOAについて</h2>
-          <div>
-            <p class="c-mainText">LINOAは、女性の<p class="c-whiteText">“きれいになりたい”</p>という想いに寄り添うトータルビューティーサロンです。<br>落ち着いた空間と丁寧な施術で、自信の持てる素肌へ導きます。</p>
-          </div>
+          <p class="c-whiteText">LINOAは、女性の“きれいになりたい”という想いに寄り添うトータルビューティーサロンです。<br>落ち着いた空間と丁寧な施術で、自信の持てる素肌へ導きます。</p>
         </div>
         <div class="p-aboutContents__bottom">
           <img class="c-aboutImage" src="./assets/images/about.jpeg" alt="フェイシャル">
-          <a href="#">
-            <button class="c-aboutButton" type="button">
-              <span class="c-aboutText">詳しく見る</span>
-              <div class="c-aboutArrow"></div>
-            </button>
+          <ul class="p-aboutList">
+            <li class="p-aboutList__item">
+              <p class="c-aboutText">自己処理の回数が減る</p>
+            </li>
+            <li class="p-aboutList__item">
+              <p class="c-aboutText">肌への負担が減る</p>
+            </li>
+            <li class="p-aboutList__item">
+              <p class="c-aboutText">肌がなめらかになる</p>
+            </li>
+            <li class="p-aboutList__item">
+              <p class="c-aboutText">毛穴が目立ちにくくなる</p>
+            </li>
+            <li class="p-aboutList__item">
+              <p class="c-aboutText">化粧ノリがよくなる</p>
+            </li>
+          </ul>
+          <a class="c-aboutButton" href="#">
+            <span class="c-aboutLabel">詳しく見る</span>
+            <div class="c-aboutArrow"></div>
           </a>
         </div>
       </div>
@@ -101,66 +114,52 @@
       <div class="p-facialContents">
         <div class="p-facialContents__top">
           <h1 class="c-mainTitle">FACIAL</h1>
-          <h2 class="c-mainHeading">素肌に、自信を。</h2>
-          <p class="c-mainText">乾燥・毛穴・くすみなど、肌悩みに合わせたフェイシャルケアをご提案。<br>顔脱毛との組み合わせで、透明感のあるなめらかな肌へ導きます。</p>
+          <h2 class="c-mainHeading">FACIAL MENU</h2>
+          <p class="c-mainText">乾燥・毛穴・くすみなど、肌悩みに合わせたフェイシャルケアをご提案<br>顔脱毛との組み合わせで、透明感のあるなめらかな肌へ導きます。</p>
         </div>
-        <div class="p-facialContents__bottom">
-          <img class="c-facialImage" src="./assets/images/facial.jpg" alt="フェイシャル">
-          <ul class=p-facialList>
-            <li class="p-facialList__item">
-              <div class="p-facialCircle">
-                <p class="c-facialTitle">顔脱毛</p>
-                <p class="c-facialHeading">産毛までやさしくケアし、化粧ノリの良い肌へ</p>
-              </div>
-            </li>
-            <li class="p-facialList__item">
-              <div class="p-facialCircle">
-                <p class="c-facialTitle">フェイシャルベーシック</p>
-                <p class="c-facialHeading">毛穴や乾燥をケアし、うるおいのある素肌へ</p>
-              </div>
-            </li>
-            <li class="p-facialList__item">
-              <div class="p-facialCircle">
-                <p class="c-facialTitle">フェイシャル＋顔脱毛セット</p>
-                <p class="c-facialHeading">人気No.1のトータルフェイスケア</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <a href="#">
-          <button class="c-facialButton" type="button">
-            <span class="c-facialText">FACIAL MENUを詳しく見る</span>
-            <div class="c-facialArrow"></div>
-          </button>
+      <div class="p-facialContents__bottom">
+        <img class="c-facialImage" src="./assets/images/facial.jpg" alt="フェイシャル">
+        <ul class=p-facialList>
+          <li class="p-facialList__item">
+            <p class="c-facialHeading">顔脱毛<p>
+            <p class="c-facialText">産毛までやさしくケアし、<br>化粧ノリの良い肌へ</p>
+          </li>
+          <li class="p-facialList__item">
+            <p class="c-facialHeading">フェイシャルベーシック</p>
+            <p class="c-facialText">毛穴や乾燥をケアし、<br>うるおいのある素肌へ</p>
+          </li>
+          <li class="p-facialList__item">
+            <p class="c-facialHeading">フェイシャル＋顔脱毛セット</p>
+            <p class="c-facialText">人気No.1の<br>トータルフェイスケア</p>
+          </li>
+        </ul>
+        <a class="c-facialButton" href="#">
+          <span class="c-facialLabel">FACIAL MENUを詳しく見る</span>
+          <div class="c-facialArrow"></div>
         </a>
       </div>
     </section>
     <section class="p-body">
-      <img class="c-bodyImage" src="./assets/images/body.jpg" alt="ボディ">
       <div class="p-bodyContents">
         <div class="p-bodyContents__top">
           <h1 class="c-mainTitle">BODY</h1>
-          <h2 class="c-mainHeading">しなやかに、美しく。</h2>
-          <p class="c-mainText">ボディケアと脱毛を組み合わせ、自信の持てるなめらかな肌へ。<br>心までほぐれる時間をお届けします。</p>
+          <h2 class="c-mainHeading">BODY MENU</h2>
+          <p class="c-mainText">ボディケアと脱毛を組み合わせ、自信の持てるなめらかな肌へ<br>心までほぐれる時間をお届けします。</p>
         </div>
         <div class="p-bodyContents__bottom">
-          <p class="c-facialTitle">BODY MENU</p>
+          <img class="c-bodyImage" src="./assets/images/body.jpg" alt="ボディ">
           <ul class=p-bodyList>
             <li class="p-bodyList__item">
               <p class="c-bodyHeading">全身脱毛</p>
-              <p class="c-bodyText"><small>PRICE</small>月額 ¥9,800〜</p>
             </li>
             <li class="p-bodyList__item">
               <p class="c-bodyHeading">VIO脱毛</p>
-              <p class="c-bodyText"><small>PRICE</small>¥5,500〜</p>
             </li>
             <li class="p-bodyList__item">
               <p class="c-bodyHeading">部分脱毛</p>
-              <p class="c-bodyText"><small>PRICE</small>¥2,980〜</p>
             </li>
             <li class="p-bodyList__item">
               <p class="c-bodyHeading">ボディトリートメント</p>
-              <p class="c-bodyText"><small>PRICE</small>¥6,600〜</p>
             </li>
         </ul>
         <a href="#">
@@ -176,7 +175,7 @@
         <div class="p-priceContents__top">
           <h1 class="c-mainTitle">PRICE</h1>
           <h2 class="c-mainHeading">通いやすい料金プラン</h2>
-          <p class="c-mainText">初めての方でも安心して通える、<p class="c-brownText">シンプルでわかりやすい</p>料金設定。</p>
+          <p class="c-mainText">初めての方でも安心して通える、シンプルでわかりやすい料金設定</p>
         </div>
         <div class="p-priceContents__bottom">
           <ul class="p-priceList">
@@ -217,51 +216,51 @@
           <div class="p-questionList">
             <details class="p-questionList__item">
               <summary class="c-accordionHeading">Q1. 脱毛は何回くらいで効果が出ますか？</summary>
-              <p class="c-questionText">A1.効果の感じ方には個人差・部位差があります。目安として、数回で毛が薄くなったと感じる方が増え、10回前後で自己処理がかなり楽になったと感じる方が多いです。</p>
+              <p class="c-accordionText">A1.効果の感じ方には個人差・部位差があります。目安として、数回で毛が薄くなったと感じる方が増え、10回前後で自己処理がかなり楽になったと感じる方が多いです。</p>
             </details>
             <details class="p-questionList__item">
               <summary class="c-accordionHeading">Q2. 通う頻度はどれくらいですか？</summary>
-              <p class="c-questionText">A2.毛の生え変わりに合わせて通うのが基本で、目安は約2か月おきです（部位・毛質・肌状態で調整します）。</p>
+              <p class="c-accordionText">A2.毛の生え変わりに合わせて通うのが基本で、目安は約2か月おきです（部位・毛質・肌状態で調整します）。</p>
             </details>
             <details class="p-questionList__item">
               <summary class="c-accordionHeading">Q3. 痛みはありますか？</summary>
-              <p class="c-questionText">A3.感じ方には個人差がありますが、一般的には「輪ゴムで軽くはじかれたような刺激」と表現されることが多いです。毛が濃い部位は刺激を感じやすい傾向があります。</p>
+              <p class="c-accordionText">A3.感じ方には個人差がありますが、一般的には「輪ゴムで軽くはじかれたような刺激」と表現されることが多いです。毛が濃い部位は刺激を感じやすい傾向があります。</p>
             </details>
             <details class="p-questionList__item">
               <summary class="c-accordionHeading">Q4. 敏感肌でも施術できますか？</summary>
-              <p class="c-questionText">A4.はい。肌状態を確認しながら出力を調整し、無理のない範囲で進めます。赤み・かゆみなどが出やすい方は、カウンセリングで肌の状態や普段のスキンケアを伺い、施術の可否や注意点をご案内します。</p>
+              <p class="c-accordionText">A4.はい。肌状態を確認しながら出力を調整し、無理のない範囲で進めます。赤み・かゆみなどが出やすい方は、カウンセリングで肌の状態や普段のスキンケアを伺い、施術の可否や注意点をご案内します。</p>
             </details>
             <details class="p-questionList__item">
               <summary class="c-accordionHeading">Q5.施術前の自己処理は必要ですか？</summary>
-              <p class="c-questionText">A5.はい。安全に照射するため、ご来店前日までの自己処理をお願いしております。</p>
+              <p class="c-accordionText">A5.はい。安全に照射するため、ご来店前日までの自己処理をお願いしております。</p>
             </details>
             <details class="p-questionList__item">
               <summary class="c-accordionHeading">Q6.カミソリでも大丈夫？おすすめは？</summary>
-              <p class="c-questionText">A6.肌負担を減らすため、電気シェーバーでの自己処理をお願いしております</p>
+              <p class="c-accordionText">A6.肌負担を減らすため、電気シェーバーでの自己処理をお願いしております</p>
             </details>
             <details class="p-questionList__item">
               <summary class="c-accordionHeading">Q7.日焼けしていても施術できますか？</summary>
-              <p class="c-questionText">A7.日焼け直後は肌への負担が大きくなる可能性があるため、肌状態によっては施術を見合わせる場合があります。目安として2週間程度あけてからのご予約をご案内しております。</p>
+              <p class="c-accordionText">A7.日焼け直後は肌への負担が大きくなる可能性があるため、肌状態によっては施術を見合わせる場合があります。目安として2週間程度あけてからのご予約をご案内しております。</p>
             </details>
             <details class="p-questionList__item">
               <summary class="c-accordionHeading">Q8.生理中でも施術できますか？</summary>
-              <p class="c-questionText">A8.VIOを避けての施術、もしくは別日への変更をご案内いたします。体調や肌の敏感さが増す場合があるため、無理せずご相談ください。</p>
+              <p class="c-accordionText">A8.VIOを避けての施術、もしくは別日への変更をご案内いたします。体調や肌の敏感さが増す場合があるため、無理せずご相談ください。</p>
             </details>
             <details class="p-questionList__item">
               <summary class="c-accordionHeading">Q9. 施術当日に気をつけることは？</summary>
-              <p class="c-questionText">A9.施術直後は肌が敏感になりやすいので、入浴（湯船）・激しい運動・飲酒・マッサージなど、体温や血行が上がる行動はお控えください。</p>
+              <p class="c-accordionText">A9.施術直後は肌が敏感になりやすいので、入浴（湯船）・激しい運動・飲酒・マッサージなど、体温や血行が上がる行動はお控えください。</p>
             </details>
             <details class="p-questionList__item">
               <summary class="c-accordionHeading">Q10. 保湿は必要ですか？</summary>
-              <p class="c-questionText">A10.はい。脱毛後は乾燥しやすいため、保湿をお願いしております。</p>
+              <p class="c-accordionText">A10.はい。脱毛後は乾燥しやすいため、保湿をお願いしております。</p>
             </details>
             <details class="p-questionList__item">
               <summary class="c-accordionHeading">Q11. 都度払いはできますか？</summary>
-              <p class="c-questionText">A11.はい。都度払い／コースのどちらもご用意しております。</p>
+              <p class="c-accordionText">A11.はい。都度払い／コースのどちらもご用意しております。</p>
             </details>
             <details class="p-questionList__item">
               <summary class="c-accordionHeading">Q12. 未成年でも利用できますか？</summary>
-              <p class="c-questionText">A12.はい。未成年の方は親権者同意書が必要となります。</p>
+              <p class="c-accordionText">A12.はい。未成年の方は親権者同意書が必要となります。</p>
             </details>
           </div>
           <a class="c-questionButton" href="#">
