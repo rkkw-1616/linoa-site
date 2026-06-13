@@ -2,7 +2,7 @@
 
 .l-header {
   border-top: 6px solid #8B5E50;
-  padding: 0 50px;
+  padding: 0 30px;
 }
 
 .p-topContents {
@@ -244,7 +244,7 @@
 }
 
 .c-whiteText {
-  font-size: 18px;
+  font-size: 16px;
   color: #fff;
   padding: 30px 0 0 20px;
 }
@@ -261,24 +261,24 @@
 
 .p-aboutList {
   position: absolute;
-  top: 25%;
-  left: 8%;
+  top: 16%;
+  left: 5%;
 }
 
 .p-aboutList__item {
   border: 1px solid #8B5E50;
   background-color: #fff;
   height: 45px;
-  width: 350px;
+  width: 300px;
   border-radius: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .c-aboutText {
   color: #8B5E50;
   text-align: center;
-  font-size: 30px;
-  padding-top: 6px;
+  font-size: 22px;
+  padding-top: 10px;
 }
 
 .c-aboutButton {
@@ -343,6 +343,7 @@
   background-color: #fff;
   margin-right: 20px;
   border-radius: 25px;
+  border: 1px solid #8B5E50;
 }
 
 .c-facialHeading {
@@ -663,6 +664,7 @@
   height: 228px;
   object-fit: cover;
   border-radius: 20px;
+  margin-right: 20px;
 }
 
 .c-slideText {
