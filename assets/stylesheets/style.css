@@ -148,7 +148,7 @@
 }
 
 .p-dropdownList__item { 
-  border-top: 1px solid #e8e8e8; 
+  border-bottom: 1px solid #e8e8e8; 
 }
 
 .c-dropdownText {
@@ -271,7 +271,7 @@
   height: 45px;
   width: 300px;
   border-radius: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .c-aboutText {
@@ -289,6 +289,7 @@
   border-radius: 50px;
   margin: 50px 415px;
   padding: 15px 50px;
+  width: 250px;
 }
 
 .c-aboutLabel {
@@ -323,6 +324,9 @@
 }
 
 .p-facialContents__bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   padding-top: 50px;
 }
 
@@ -365,8 +369,8 @@
   background-color: #8B5E50;
   border: none;
   border-radius: 50px;
-  margin: 0 290px;
-  padding: 20px;
+  padding: 15px 50px;
+  width: 250px;
 }
 
 .c-facialLabel {
@@ -398,6 +402,9 @@
 }
 
 .p-bodyContents__bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   padding-top: 50px;
 }
 
@@ -434,8 +441,8 @@
   background-color: #8B5E50;
   border: none;
   border-radius: 50px;
-  margin: 0px 315px;
   padding: 15px 20px;
+  width: 250px;
 }
 
 .c-bodyLabel {
@@ -460,6 +467,12 @@
 .p-price {
   padding: 100px 100px 200px;
   background-color: #FAF0E6;
+}
+
+.p-priceContents__bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .p-priceList {
@@ -499,17 +512,15 @@
 }
 
 .c-priceButton {
-  text-align: justify;
   position: relative;
   background-color: #8B5E50;
-  width: 250px;
+  width: 260px;
   height: 45px;
   border: none;
   border-radius: 50px;
-  margin: 30px 415px;
 }
 
-.c-priceText {
+.c-priceLabel {
   padding-left: 40px;
   color: #fff;
 }
@@ -750,6 +761,7 @@
 
 .c-flowImage {
   height: 119px;
+  width: 251px;
   object-fit: cover;
   border-radius: 20px 20px 0 0;
 }
@@ -758,7 +770,7 @@
   background-color: #fff;
   border-radius: 0 0 20px 20px;
   height: 190px;
-  padding: 16px 20px;
+  width: 251px;
 }
 
 .c-flowHeading {
@@ -771,11 +783,11 @@
   font-size: 18px;
   color: #8B5E50;
   font-weight: bold;
+  padding-top: 16px;
 }
 
 .c-flowText {
-  width: 251px;
-  padding-top: 20px;
+  padding: 20px;
   font-size: 14px;
 }
 
