@@ -3,6 +3,12 @@
 .l-header {
   border-top: 6px solid #8B5E50;
   padding: 0 30px;
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  top: 0;
+  height: 130px;
+  z-index: 9999;
 }
 
 .p-topContents {
@@ -74,6 +80,7 @@
 .p-dropdown {
   position: relative;
   display: flex;
+  align-items: center;
 }
 
 .c-dropdownButton {
@@ -81,6 +88,7 @@
   border: none;
   background: transparent;
   margin: 0;
+  padding: 0;
   font-size: 14px;
   font-weight: bold;
   cursor: pointer;
@@ -89,42 +97,32 @@
   line-height: 1.5;
 }
 
-.p-dropdown__button::after  {
-  content: ""; 
-  position: absolute;
-  top: 50%;
-  right: 2px;
-  width: 8px;
-  height: 8px;
-  border-right: 1.5px solid #8B5E50;
-  border-bottom: 1.5px solid #8B5E50;
-  transform: translateY(-60%) rotate(45deg);
-  transition: transform 0.25s ease;
-}
-
 .c-navArrow {
   position: relative;
   display: inline-block;
-  padding-right: 20px;
+  width: 12px;
+  height: 12px;
+  margin-left: 6px;
+  flex-shrink: 0;
 }
 
 .c-navArrow::after {
   content: "";
   position: absolute;
   top: 50%;
-  right: 2px;
+  left: 50%;
   width: 8px;
   height: 8px;
   border-right: 1.5px solid #8B5E50;
   border-bottom: 1.5px solid #8B5E50;
-  transform: translateY(-60%) rotate(45deg);
+  transform: translate(-50%, -60%) rotate(45deg);
+  transform-origin: center;
   transition: transform 0.25s ease;
 }
 
 .p-dropdownList {
   position: absolute;
   top: calc(100% + 10px);
-  left: 0;
   min-width: 174px;
   list-style: none;
   background: #fff;
@@ -137,14 +135,24 @@
   transition: opacity 00.25s ease,visibility 00.25s ease,transform 00.25s ease;
 }
 
-.p-dropdown:hover .p-dropdownList, .p-dropdown:focus-within {
+.u-left0 {
+  left: 0;
+}
+
+.u-right0 {
+  right: 0;
+}
+
+.p-dropdown:hover .p-dropdownList,
+.p-dropdown:focus-within .p-dropdownList {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
 }
 
-.p-dropdown:hover .p-dropdown__button::after, .p-dropdown:focus-within .p-dropdown__button::after { 
-  transform: translateY(-20%) rotate(-135deg); 
+.p-dropdown:hover .c-navArrow::after,
+.p-dropdown:focus-within .c-navArrow::after {
+  transform: translate(-50%, -40%) rotate(-135deg);
 }
 
 .p-dropdownList__item { 
@@ -159,7 +167,8 @@
   font-size: 14px; 
   font-weight: bold; 
   white-space: nowrap; 
-  background: #fff; 
+  background: #fff;
+  border-radius: 0 0 20px 20px;
 }
 
 .c-dropdownText:hover {
@@ -169,6 +178,7 @@
 
 .l-main {
   background-color: #8B5E50;
+  padding-top: 130px;
 }
 
 .p-campaign {
