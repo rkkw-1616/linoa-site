@@ -25,6 +25,11 @@
   font-size: 12px;
   padding: 30px 30px 0 0;
 }
+@media screen and (max-width: 999px) {
+  .c-subText {
+    display: none;
+  }
+}
 
 .c-navLogo {
   width: 120px;
@@ -59,6 +64,53 @@
 
 .p-topContents__bottom {
   padding: 24px 0 10px;
+}
+
+@media screen and (max-width: 999px) {
+  .p-topContents__bottom {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .c-hamburgerButton {
+    display: none;
+    flex-shrink: 0;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .c-hamburgerButton {
+    display: none;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    z-index: 1001;
+  }
+
+  .c-hamburgerButton span {
+    display: block;
+    width: 26px;
+    height: 2px;
+    margin: 6px auto;
+    background-color: #333;
+    transition: 0.3s;
+  }
+
+  .c-hamburgerButton.is-open span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .c-hamburgerButton.is-open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .c-hamburgerButton.is-open span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
 }
 
 .p-navList {
