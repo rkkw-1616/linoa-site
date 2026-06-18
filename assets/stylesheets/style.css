@@ -16,6 +16,13 @@
   justify-content: space-between;
 }
 
+@media screen and (max-width:999px) {
+  .p-topContents__right {
+    display: flex;
+    margin: 20px 0 20px auto;
+  }
+}
+
 .p-topContents__top {
   display: flex;
   justify-content: flex-end;
@@ -25,7 +32,7 @@
   font-size: 12px;
   padding: 30px 30px 0 0;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width:999px) {
   .c-subText {
     display: none;
   }
@@ -46,10 +53,25 @@
   border-radius: 0 0 12px 12px;
   padding: 13px;
 }
+@media screen and (max-width:999px) {
+  .p-topContents__inner {
+    position: relative;
+    margin-right: 10px;
+    padding: 10px;
+    width: 250px;
+    border-radius: 50px;
+  }
+}
 
 .c-navIcon {
   width: 20px;
   height: 20px;
+}
+
+@media screen and (max-width:999px) {
+  .c-navIcon {
+    display: none;
+  }
 }
 
 .c-navText {
@@ -58,8 +80,30 @@
   font-weight: bold;
 }
 
+@media screen and (max-width:999px) {
+  .c-navText {
+    padding-right: 20px;
+  }
+}
+
 .u-whiteText {
   color: #fff;
+}
+
+@media screen and (max-width:999px) {
+  .c-topArrow {
+    content: "";
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0px;
+    right: 20px;
+    width: 13px;
+    height: 13px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(45deg);
+  }
 }
 
 .p-topContents__bottom {
@@ -81,7 +125,6 @@
 
 @media screen and (max-width: 999px) {
   .c-hamburgerButton {
-    display: none;
     width: 40px;
     height: 40px;
     border: none;
@@ -91,24 +134,24 @@
     z-index: 1001;
   }
 
-  .c-hamburgerButton span {
+  .c-hamburgerLine {
     display: block;
     width: 26px;
     height: 2px;
     margin: 6px auto;
-    background-color: #333;
+    background-color: #8B5E50;
     transition: 0.3s;
   }
 
-  .c-hamburgerButton.is-open span:nth-child(1) {
+  .c-hamburgerLine.is-open:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
 
-  .c-hamburgerButton.is-open span:nth-child(2) {
+  .c-hamburgerLine.is-open:nth-child(2) {
     opacity: 0;
   }
 
-  .c-hamburgerButton.is-open span:nth-child(3) {
+  .c-hamburgerLine.is-open:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
 }
