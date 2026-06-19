@@ -7,7 +7,6 @@
   background-color: #fff;
   width: 100%;
   top: 0;
-  height: 130px;
   z-index: 9999;
 }
 
@@ -16,9 +15,20 @@
   justify-content: space-between;
 }
 
+.p-topContents__left {
+  flex-shrink: 0;
+  padding-top: 14px;
+}
+
+.c-navLogo {
+  height: auto;
+  display: block;
+}
+
 @media screen and (max-width:999px) {
   .p-topContents__right {
     display: flex;
+    align-items: center;
     margin: 20px 0 20px auto;
   }
 }
@@ -44,18 +54,18 @@
 }
 
 .p-topContents__inner {
-  width: 260px;
-  height: 50px;
-  display: flex;
+  min-width: 260px;
+  min-height: 50px;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
+  position: relative;
+  transition: opacity 0.3s ease;
   background-color: #8B5E50;
-  border-radius: 0 0 12px 12px;
-  padding: 13px;
 }
 @media screen and (max-width:999px) {
   .p-topContents__inner {
-    position: relative;
     margin-right: 10px;
     padding: 10px;
     width: 250px;
@@ -92,7 +102,6 @@
 
 @media screen and (max-width:999px) {
   .c-topArrow {
-    content: "";
     margin: auto;
     position: absolute;
     top: 0;
@@ -112,7 +121,33 @@
 
 @media screen and (max-width: 999px) {
   .p-topContents__bottom {
-    display: none;
+    position: fixed;
+    top: 130px;
+    right: 0;
+    height: calc(100vh - 82px);
+    background-color: #fff;
+    padding: 24px 20px 32px;
+    box-shadow: -8px 0 24px rgba(0, 0, 0, 0.08);
+    overflow-y: auto;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+  }
+
+  .p-topContents__bottom.is-open {
+    transform: translateX(0);
+    width: 100%;
+  }
+
+  .p-navList {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .p-navList__item {
+    border-bottom: 1px solid #E8E8E8;
   }
 }
 
@@ -276,8 +311,19 @@
   padding-top: 130px;
 }
 
+.p-hero {
+  width: 100%;
+}
+
+.c-brandImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
 .p-campaign {
-  padding: 100px;
+  padding: 100px 20px;
   background-color: #fff;
 }
 
@@ -314,8 +360,10 @@
 }
 
 .c-campaignImage {
-  width: 800px;
-  height: 340px;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  display: block;
 }
 
 .p-about {
