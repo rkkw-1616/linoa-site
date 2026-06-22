@@ -63,6 +63,7 @@
   position: relative;
   transition: opacity 0.3s ease;
   background-color: #8B5E50;
+  border-radius: 0 0 10px 10px;
 }
 @media screen and (max-width:999px) {
   .p-topContents__inner {
@@ -819,11 +820,22 @@
   padding-left: 20px;
 }
 
+.p-slide {
+  width: 100%;
+  overflow: hidden;
+}
+
 .p-slideList {
   display: flex;
+  width: max-content;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  animation: slide_loop 40s linear infinite;
 }
 
 .c-slideImage {
+  display: block;
   width: 310px;
   height: 228px;
   object-fit: cover;
@@ -834,7 +846,18 @@
 .c-slideText {
   font-size: 12px;
   color: #fff;
-  padding: 20px 0 0 880px;
+  padding: 20px 180px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@keyframes slide_loop {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 .p-news {
@@ -1056,13 +1079,38 @@
   padding: 100px 0 80px;
 }
 
+.p-bottomContents__top {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 .c-bottomHeading {
+  display: inline-block;
   font-size: 118px;
   white-space: nowrap;
   opacity: 0.5;
   font-weight: 400;
   font-family: serif;
   color: #fff;
+  animation: marqueeText 40s linear infinite;
+}
+
+@keyframes marqueeText {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .c-bottomHeading {
+    animation: none;
+    padding-left: 0;
+    transform: none;
+  }
 }
 
 .p-bottomContents__bottom {
