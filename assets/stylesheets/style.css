@@ -286,18 +286,18 @@
   transform: translate(-50%, -40%) rotate(-135deg);
 }
 
-.p-dropdownList__item { 
-  border-bottom: 1px solid #e8e8e8; 
+.p-dropdownList__item {
+  border-bottom: 1px solid #e8e8e8;
 }
 
 .c-dropdownText {
-  display: block; 
-  padding: 18px 24px; 
-  text-decoration: none; 
-  color: #555; 
-  font-size: 14px; 
-  font-weight: bold; 
-  white-space: nowrap; 
+  display: block;
+  padding: 18px 24px;
+  text-decoration: none;
+  color: #555;
+  font-size: 14px;
+  font-weight: bold;
+  white-space: nowrap;
   background: #fff;
   border-radius: 0 0 20px 20px;
 }
@@ -441,7 +441,7 @@
   background-color: #fff;
   border: none;
   border-radius: 50px;
-  margin: 50px 415px;
+  margin: 50px auto;
   padding: 15px 50px;
   width: 250px;
 }
@@ -486,6 +486,7 @@
 
 .c-facialImage {
   height: 500px;
+  width: auto;
   object-fit: cover;
 }
 
@@ -525,6 +526,7 @@
   border-radius: 50px;
   padding: 15px 50px;
   width: 250px;
+  margin: 0 auto;
 }
 
 .c-facialLabel {
@@ -597,6 +599,7 @@
   border-radius: 50px;
   padding: 15px 20px;
   width: 250px;
+  margin: 0 auto;
 }
 
 .c-bodyLabel {
@@ -666,16 +669,18 @@
 }
 
 .c-priceButton {
+  display: flex;
   position: relative;
   background-color: #8B5E50;
-  width: 260px;
-  height: 45px;
   border: none;
   border-radius: 50px;
+  padding: 15px 20px;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .c-priceLabel {
-  padding-left: 40px;
+  padding-left: 20px;
   color: #fff;
 }
 
@@ -793,12 +798,9 @@
   background-color: #fff;
   border: none;
   border-radius: 50px;
-  margin: 50px 415px;
-  padding: 15px 50px;
-}
-
-.c-questionText {
-  color: #8B5E50;
+  padding: 15px 20px;
+  width: 250px;
+  margin: 50px auto;
 }
 
 .c-questionArrow {
@@ -807,7 +809,7 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  right: 80px;
+  right: 60px;
   width: 13px;
   height: 13px;
   border-top: 3px solid #8B5E50;
@@ -817,7 +819,7 @@
 
 .c-questionLabel {
   color: #8B5E50;
-  padding-left: 20px;
+  padding-left: 50px;
 }
 
 .p-slide {
@@ -881,13 +883,14 @@
   background-color: #8B5E50;
   border: none;
   border-radius: 50px;
-  margin: 50px 415px;
-  padding: 15px 50px;
+  padding: 15px 20px;
+  width: 250px;
+  margin: 50px auto;
 }
 
 .c-newsLabel {
   color: #fff;
-  padding-left: 20px;
+  padding-left: 50px;
 }
 
 .c-newsArrow {
@@ -968,14 +971,14 @@
 }
 
 .c-flowButton {
-  text-align: justify;
+  display: flex;
   position: relative;
   background-color: #8B5E50;
-  width: 250px;
-  height: 45px;
   border: none;
   border-radius: 50px;
-  margin: 30px 415px;
+  padding: 15px 20px;
+  width: 250px;
+  margin: 30px auto;
 }
 
 .c-flowLabel {
