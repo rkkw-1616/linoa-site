@@ -410,6 +410,7 @@
 
 .c-aboutImage {
   height: 500px;
+  width: auto;
   object-fit: cover;
 }
 
@@ -685,7 +686,6 @@
 }
 
 .c-priceArrow {
-  content: "";
   margin: auto;
   position: absolute;
   top: 0;
