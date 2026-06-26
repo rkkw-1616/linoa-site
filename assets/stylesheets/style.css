@@ -1,5 +1,29 @@
 @charset "UTF-8";
 
+:root {
+  --color-primary: #8B5E50;
+  --color-white: #fff;
+  --color-bg-sub: #FAF0E6;
+  --color-text: #555;
+  --color-border: #D9D9D9;
+
+  --fs-xs: 12px;
+  --fs-sm: 14px;
+  --fs-base: 15px;
+  --fs-md: 18px;
+  --fs-lg: 20px;
+  --fs-xl: 22px;
+  --fs-2xl: 56px;
+  --fs-3xl: 118px;
+
+  --radius-xs: 10px;
+  --radius-sm: 12px;
+  --radius-md: 20px;
+  --radius-lg: 50px;
+  --radius-xl: 100px;
+  --radius-pill: 9999px;
+}
+
 .l-header {
   border-top: 6px solid #8B5E50;
   padding: 0 30px;
@@ -20,9 +44,11 @@
   padding-top: 14px;
 }
 
-.c-navLogo {
+.c-logo {
   height: auto;
   display: block;
+  width: 120px;
+  object-fit: contain;
 }
 
 @media screen and (max-width:999px) {
@@ -39,18 +65,14 @@
 }
 
 .c-subText {
-  font-size: 12px;
+  font-size: var(--fs-xs);
+  color: var(--color-text);
   padding: 30px 30px 0 0;
 }
 @media screen and (max-width:999px) {
   .c-subText {
     display: none;
   }
-}
-
-.c-navLogo {
-  width: 120px;
-  object-fit: contain;
 }
 
 .p-topContents__inner {
