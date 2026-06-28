@@ -13,14 +13,15 @@
   /* ========================================
     Font Size
   ======================================== */
-  --fs-xs: 12px;
-  --fs-sm: 14px;
-  --fs-base: 15px;
-  --fs-md: 18px;
-  --fs-lg: 20px;
-  --fs-xl: 22px;
-  --fs-2xl: 56px;
-  --fs-3xl: 118px;
+  --fs-xs: 10px;
+  --fs-sm: 12px;
+  --fs-base: 14px;
+  --fs-md: 15px;
+  --fs-lg: 18px;
+  --fs-xl: 20px;
+  --fs-2xl: 22px;
+  --fs-3xl: 56px;
+  --fs-4xl: 118px;
 
   /* ========================================
     Radius
@@ -84,19 +85,22 @@
   border-radius: 0 0 10px 10px;
 }
 
-.c-navIcon {
+.c-icon {
   width: 20px;
   height: 20px;
+  margin-right: 10px;
 }
 
-.c-navText {
-  font-size: var(--fs-sm);
-  padding-left: 10px;
+.c-text {
   font-weight: bold;
 }
 
-.u-whiteText {
+.c-text--color-white {
   color: var(--color-white);
+}
+
+.c-text--fs-xs {
+  font-size: var(--fs-sm);
 }
 
 .p-topContents__bottom {
@@ -151,7 +155,7 @@
   color: var(--color-text);
 }
 
-.c-navArrow {
+.c-downArrow {
   position: relative;
   display: inline-block;
   width: 12px;
@@ -160,7 +164,7 @@
   flex-shrink: 0;
 }
 
-.c-navArrow::after {
+.c-downArrow::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -260,17 +264,23 @@
   padding-bottom: 45px;
 }
 
-.c-mainTitle {
+.c-title {
   position: relative;
   display: inline-block;
-  font-size: 56px;
   font-weight: normal;
-  color: #8B5E50;
   padding-left: 40px;
   font-family: serif;
 }
 
-.c-mainTitle::before {
+.c-title--color-primary {
+  color: var(--color-primary);
+}
+
+.c-title--fs-3xl {
+  font-size: var(--fs-3xl);
+}
+
+.c-title::before {
   content: "・";
   position: absolute;
   top: 0;
@@ -1096,7 +1106,7 @@
     border-radius: 50px;
   }
 
-    .c-navIcon {
+  .c-navIcon {
     display: none;
   }
 
@@ -1104,7 +1114,7 @@
     padding-right: 20px;
   }
 
-  .c-topArrow {
+  .c-rightArrow {
     margin: auto;
     position: absolute;
     top: 0;
