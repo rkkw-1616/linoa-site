@@ -50,7 +50,6 @@
 
 .l-footer {
 background-color: var(--color-primary);
-padding-top: 560px;
 }
 
 /* ========================================
@@ -218,6 +217,22 @@ padding-top: 560px;
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
+  display: inline-block;
+  font-size: 118px;
+  white-space: nowrap;
+  opacity: 0.5;
+  font-weight: 400;
+  font-family: serif;
+  animation: marqueeText 40s linear infinite;
+}
+
+@keyframes marqueeText {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
 
 .p-footer__body {
