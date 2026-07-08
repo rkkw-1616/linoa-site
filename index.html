@@ -22,7 +22,7 @@
           <a class="p-header__button" href="#">
             <img class="c-icon" src="./assets/images/calendar.png" alt="カレンダーアイコン">
             <span class="c-contactText">無料カウンセリングを予約する</span>
-            <span class="c-rightArrow"></span>
+            <span class="c-contactArrow"></span>
           </a>
         </div>
         <button class="c-hamburgerButton" type="button" aria-label="メニューを開く" aria-expanded="false">
@@ -31,7 +31,7 @@
           <span class="c-hamburgerLine"></span>
         </button>
         <div class="p-header__nav">
-          <ul class="p-nav">
+          <ul class="p-nav p-nav--pc">
             <li class="p-nav__item"><a href="#">LINOAについて</a></li>
             <li class="p-nav__item"><a href="#">フェイシャル</a></li>
             <li class="p-nav__item"><a href="#">ボディ</a></li>
@@ -40,31 +40,68 @@
             <li class="p-nav__item">
               <div class="p-dropdown">
                 <button class="c-dropdownButton" type="button">会員様向けメニュー</button>
-                  <ul class="p-dropdownList u-left0">
-                    <li class="p-dropdownList__item">
-                      <a class="c-dropdownText" href="#">オンラインショップ</a>
-                    </li>
-                    <li class="p-dropdownList__item">
-                      <a class="c-dropdownText" href="#">ヘルプセンター</a>
-                    </li>
-                  </ul>
+                <ul class="p-dropdownList u-left0">
+                  <li class="p-dropdownList__item">
+                    <a href="#">オンラインショップ</a>
+                  </li>
+                  <li class="p-dropdownList__item">
+                    <a href"#">ヘルプセンター</a>
+                  </li>
+                </ul>
                 <span class="c-downArrow"></span>
               </div>
             </li>
             <li class="p-nav__item">
               <div class="p-dropdown">
                 <button class="c-dropdownButton" type="button">最新のお知らせ</button>
-                  <ul class="p-dropdownList u-right0">
-                    <li class="p-dropdownList__item">
-                      <a class="c-dropdownText" href="#">NEWS</a>
-                    </li>
-                    <li class="p-dropdownList__item">
-                      <a class="c-dropdownText" href="#">COLUMN</a>
-                    </li>
-                  </ul>
+                <ul class="p-dropdownList u-right0">
+                  <li class="p-dropdownList__item">
+                    <a href="#">NEWS</a>
+                  </li>
+                  <li class="p-dropdownList__item">
+                    <a href="#">COLUMN</a>
+                  </li>
+                </ul>
                 <span class="c-downArrow"></span>
               </div>
             </li>
+          </ul>
+          <ul class="p-nav p-nav--sp">
+            <li class="p-nav__item"><a href="#">LINOAについて</a></li>
+            <li class="p-nav__item"><a href="#">フェイシャル</a></li>
+            <li class="p-nav__item"><a href="#">ボディ</a></li>
+            <li class="p-nav__item"><a href="#">料金</a></li>
+            <li class="p-nav__item"><a href="#">よくある質問</a></li>
+            <li class="p-nav__item">
+              <div class="p-dropdown">
+                <button class="c-dropdownButton" type="button" aria-expanded="false">会員様向けメニュー</button>
+                <ul class="p-dropdownList">
+                  <li class="p-dropdownList__item">
+                    <a href="#">オンラインショップ</a>
+                  </li>
+                  <li class="p-dropdownList__item">
+                    <a href="#">ヘルプセンター</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="p-nav__item">
+              <div class="p-dropdown">
+                <button class="c-dropdownButton" type="button" aria-expanded="false">最新のお知らせ</button>
+                <ul class="p-dropdownList">
+                  <li class="p-dropdownList__item">
+                    <a href="#">NEWS</a>
+                  </li>
+                  <li class="p-dropdownList__item">
+                    <a href="#">COLUMN</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <ul class="p-headerLink p-headerLink--sp">
+            <li class="p-headerLink__item"><a href="#">採用情報</a></li>
+            <li class="p-headerLink__item"><a href="#">店舗検索</a></li>
           </ul>
         </div>
       </div>
@@ -370,7 +407,7 @@
             </li>
             <li class="p-flow__item">
               <div class="p-flow__step">
-                <span class="c-label"><small>STEP</small>02</span>
+                <span class="c-label"><small>STEP</small>03</span>
               </div>
               <div class="p-flow__card">
                 <img class="c-image c-image--card-wide" src="./assets/images/Reserve.jpg" alt="予約">
