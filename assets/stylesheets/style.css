@@ -44,7 +44,7 @@
 
 @media screen and (max-width: 999px) {
   .l-header {
-    padding: 0 20px;
+    padding: 0;
   }
 }
 
@@ -76,12 +76,6 @@
   width: 120px;
   height: auto;
   object-fit: contain;
-}
-
-@media screen and (max-width: 999px) {
-  .c-logo {
-    width: 130px;
-  }
 }
 
 .p-header__body {
@@ -950,6 +944,12 @@
 .p-section--faq {
   padding-top: 200px;
   padding-bottom: 100px;
+}
+
+@media screen and (max-width: 999px) {
+  .p-section--faq {
+    padding-top: 0;
+  }
 }
 
 .p-section--faq .p-section__head {
