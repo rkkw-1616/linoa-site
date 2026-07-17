@@ -1266,7 +1266,7 @@
 .p-flow__step::after {
   content: "";
   flex: 1;
-  height: auto;
+  height: 1px;
   background-color: var(--color-primary);
 }
 
