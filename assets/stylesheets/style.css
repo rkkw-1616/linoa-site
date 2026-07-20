@@ -78,6 +78,12 @@
   object-fit: contain;
 }
 
+@media screen and (max-width: 999px) {
+  .c-logo {
+    width: 100px;
+  }
+}
+
 .p-header__body {
   margin-left: auto;
 }
@@ -560,12 +566,12 @@
 ======================================== */
 .l-main {
   background-color: var(--color-primary);
-  padding-top: 130px;
+  padding-top: 140px;
 }
 
 @media screen and (max-width: 999px) {
   .l-main {
-    padding-top: 78px;
+    padding-top: 100px;
   }
 }
 
@@ -605,6 +611,12 @@
 
 .p-section__head {
   padding: 100px 0 70px;
+}
+
+@media screen and (max-width: 999px) {
+  .p-section__head {
+    padding: 50px 0;
+  }
 }
 
 .p-section__textContents {
@@ -700,7 +712,7 @@
 /* ========================================
   Campaign
 ======================================== */
-.c-image--banner {
+.c-image--campaign {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
@@ -979,10 +991,11 @@
   .c-image--floatingRight {
     position: relative;
     width: calc(100% - 40px);
+    top: -80px;
     aspect-ratio: 651 / 370;
     height: auto;
     margin-left: auto;
-    border-radius: 40px 0 0 40px;
+    border-radius: 30px 0 0 30px;
     object-fit: cover;
   }
 }
@@ -1188,8 +1201,8 @@
 @media screen and (max-width: 999px) {
   .p-section--flow .c-image--floatingRight {
     position: relative;
-    top: -50px;
-    border-radius: 0 50px 50px 0;
+    top: -80px;
+    border-radius: 0 30px 30px 0;
     margin: 0 0 40px 0;
   }
 }
