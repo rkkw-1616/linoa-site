@@ -44,7 +44,7 @@
 
 @media screen and (max-width: 999px) {
   .l-header {
-    padding: 0;
+    padding: 0 10px;
   }
 }
 
@@ -929,7 +929,14 @@
 @media screen and (max-width: 999px) {
   .p-price__item {
     width: 100%;
-    max-width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    padding: 0 16px 16px 16px;
   }
 }
 
@@ -940,6 +947,13 @@
   justify-content: center;
   text-align: center;
   border-bottom: 1px dotted var(--color-primary);
+}
+
+@media screen and (max-width: 999px) {
+  .p-price__item .c-heading {
+    border-bottom: 0;
+    border-right: 1px dotted var(--color-primary);
+  }
 }
 
 .p-price__item .c-text {
@@ -1190,7 +1204,6 @@
 @media screen and (max-width: 999px) {
   .p-section--flow {
     padding-top: 0;
-    padding-bottom: 60px;
   }
 }
 
